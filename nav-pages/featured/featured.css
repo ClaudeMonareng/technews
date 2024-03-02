@@ -1,0 +1,272 @@
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+:root{
+    --heading:'Montserrat', sans-serif;
+}
+
+body{
+    font-family:'Raleway', sans-serif;
+    background: #ffffff;
+}
+
+/***************** global styling ****************/
+
+img{
+    width:100%;
+} 
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+    color:#1b1a1a;
+}
+
+hr{
+    width:95vw;
+    margin: 0 auto;
+}
+
+/********************* header ************************/
+
+.top-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background: #1a18a5;
+    color:#ffffff;
+    padding: 20px 30px;
+}
+
+#web-nam{
+    color:#ffffff;
+}
+
+.top-head .fas{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/******* js related styling starts *******/
+
+.times-btn{
+    display:none;
+}
+
+.nav-bar{
+    background: #252121;
+    height: min-content;
+    overflow: visible;
+}
+
+.show-nav{
+    height:auto;
+}
+
+/******************** ends ***************/
+
+.nav-bar ul li{
+    text-align:center;
+    display:block;
+    padding:15px 0;
+    transition: all 1s ease-in-out;
+}
+
+.nav-bar ul li a{
+    font-size: 16px;
+    padding: 16px;
+    color:#fff;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+}
+
+#dropdown-id{
+    text-transform:uppercase;
+    color:white;
+    padding: 0px;
+    transition: all 1s ease-in-out;
+}
+
+#dropdown-content-id{
+    color: black !important;
+}
+.nav-bar ul li a:hover{
+    background-color: #0e3191;
+}
+
+/* positions the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    opacity:unset;
+}
+
+/* dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #413a3a;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* links inside the dropdown */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/************ social-icons ************/
+.social-icons{
+    display:none;
+}
+
+/*********** footer section ***********/
+
+footer{
+    background: #252525;
+    color: #f3f3f3;
+    padding: 30px;
+}
+
+footer h2{
+    color: white;
+    padding:10px 0;
+}
+
+footer p{
+    color:white;
+    padding: 10px 0;
+    line-height: 1.3;
+}
+
+.footer-left, .footer-middle, .footer-second-middle, .footer-right{
+    margin: 0 80px;
+}
+
+footer > p{
+    text-align: center;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+.footer-right i{
+    font-size: 1.8rem;
+    color: #808080;
+}
+
+.footer-right input{
+    font-size: 18px;
+    border: none;
+    background: transparent;
+    outline: none;
+    color:#808080;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.footer-right div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 200px;
+    padding: 10px 0;
+    border-bottom: 1.6px solid #808080; 
+}
+
+/********** my modifications **********/
+
+    .hot-topic-content1 h2{
+    color:#000;
+    }
+
+    /*** search ***/
+    .d-flex{
+        padding: 50px;
+    }
+
+/**************************************/
+
+@media(min-width:800px){
+
+    /* nav */
+    
+    .ham-btn, .times-btn{
+        display: none!important;
+    }
+
+    .navigation-container{
+        display:flex;
+        background:#252525;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .top-head{
+        flex: 0 0 15%;
+    }
+
+    .nav-bar{
+        flex: 1 0 auto;
+        height: 100%;
+        background:none;
+    }
+
+    .nav-bar nav ul{
+        display:flex;
+        justify-content:center;
+    }
+
+    .nav-bar nav ul li{
+        padding-right:30px;
+    }
+
+    .nav-bar nav ul li:hover{
+        background:none;
+    }
+
+    /******** social icons ********/
+
+    .social-icons{
+        flex:0 1 30%;
+        display:contents;
+        margin: 0 auto;
+    }
+
+    .social-icons .fab{
+        color:#fff;
+        font-size: 1rem;
+    }
+
+    .social-icons ul{
+        display:flex;
+        justify-content:safe;
+        padding: 0px;
+    }
+
+    .social-icons ul li{
+        padding:20px;
+    }
+
+    .footer-container{
+        display: flex;
+    }
+}
+
+
+/***********
